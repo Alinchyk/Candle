@@ -2,6 +2,11 @@
   padding-top: 40px;
   padding-bottom: 50px;
 
+  @media (max-width: 500px) {
+    padding: 50px 0;
+    font-size: 14px;
+  }
+
   .footer__inner {
     display: flex;
     justify-content: space-between;
@@ -10,11 +15,20 @@
     @media (max-width: 768px) {
       flex-wrap: wrap;
     }
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
   }
 
   .menu__list {
     display: flex;
     gap: 20px;
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+      margin: 50px 0;
+    }
   }
 
   .list-link {
@@ -31,6 +45,10 @@
       text-align: center;
       padding-top: 15px;
     }
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
   }
 
   .email {
@@ -40,8 +58,9 @@
   .footer__social {
     display: flex;
     gap: 15px;
-  }
-  @media (max-width: 768px) {
-    justify-content: center;
+
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
   }
 }

@@ -30,18 +30,30 @@
     }
   }
 
-  .menu__btn span {
-    height: 1px;
-    background-color: #7b6152;
-    width: 100%;
-  }
-
-  .menu__list {
+  .header__menu__list {
     display: flex;
     gap: 20px;
 
     @media (max-width: 640px) {
-      display: none;
+      background-color: #7b6152;
+      color: #fff8f3;
+      flex-direction: column;
+      gap: 20px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: translateY(-110%);
+      transition: transform 0.5s;
+      padding-left: 45px;
+      padding-top: 25px;
+      padding-bottom: 45px;
+      padding-right: 35px;
+    }
+  }
+
+  .header__menu__list.menu--open {
+    @media (max-width: 640px) {
+      transform: translateY(0);
     }
   }
 
@@ -64,8 +76,8 @@
       @media (max-width: 768px) {
         width: 14px;
         height: 14px;
-        left: -16px;
-        top: -2px;
+        left: -15px;
+        top: -3px;
         background-size: cover;
       }
     }

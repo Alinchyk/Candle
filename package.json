@@ -24,8 +24,16 @@
   },
   "version": "1.0.0",
   "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alinchyk/Candle"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alinchyk/Candle/issues"
+  },
+  "homepage": "https://github.com/Alinchyk/Candle#readme",
   "description": ""
 }
