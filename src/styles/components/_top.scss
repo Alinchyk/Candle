@@ -1,0 +1,118 @@
+.top {
+  padding-bottom: 150px;
+  padding-top: 40px;
+
+  @media (max-width: 480px) {
+    padding: 30px 0 50px;
+  }
+
+  .top__inner {
+    position: relative;
+  }
+
+  .top__content {
+    width: 370px;
+    padding: 150px 0 250px;
+
+    @media (max-width: 1000px) {
+      padding: 95px 0 70px;
+    }
+
+    @media (max-width: 768px) {
+      width: 236px;
+    }
+
+    @media (max-width: 480px) {
+      width: 180px;
+    }
+
+    @media (max-width: 360px) {
+      width: 203px;
+      padding: 20px 0 0;
+    }
+
+    .top__title {
+      font-family: Yeseva One;
+      font-size: 30px;
+
+      @media (max-width: 768px) {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 15px;
+        margin-bottom: 15px;
+      }
+
+      @media (max-width: 360px) {
+        font-size: 18px;
+      }
+    }
+
+    .top__text {
+      margin-top: 15px;
+      margin-bottom: 48px;
+
+      @media (max-width: 768px) {
+        font-size: 10px;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 8px;
+        margin-bottom: 15px;
+      }
+    }
+
+    .top__btn {
+      background: #ffbd59;
+      padding: 18px 54px;
+      justify-content: center;
+      align-items: center;
+
+      color: #272727;
+      font-family: Comfortaa;
+      font-size: 14px;
+      font-weight: 600;
+
+      @media (max-width: 480px) {
+        font-size: 10px;
+        padding: 14px 41px;
+      }
+    }
+
+    .top__img {
+      position: absolute;
+      top: 0;
+      left: 240px;
+
+      @media (max-width: 1000px) {
+        left: 340px;
+      }
+
+      @media (max-width: 768px) {
+        left: 180px;
+      }
+      @media (max-width: 360px) {
+        left: auto;
+        right: 0;
+      }
+    }
+
+    .top__img-l {
+      @media (max-width: 1000px) {
+        width: 655px;
+      }
+
+      @media (max-width: 480px) {
+        width: 309px;
+        left: 167px;
+      }
+
+      @media (max-width: 360px) {
+        width: 160px;
+      }
+    }
+  }
+}

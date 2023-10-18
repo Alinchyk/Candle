@@ -18,6 +18,11 @@ body {
   line-height: 1.2;
 }
 
+.main {
+  background-color: #fff8f3;
+  overflow-x: clip;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -34,6 +39,12 @@ h2,
 h3,
 p {
   margin: 0;
+}
+
+button {
+  border: none;
+  padding: 0;
+  border-radius: 0;
 }
 
 .container {
