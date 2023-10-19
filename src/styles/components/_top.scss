@@ -70,15 +70,7 @@
     }
 
     .top__btn {
-      background: #ffbd59;
-      padding: 18px 54px;
-      justify-content: center;
-      align-items: center;
-
-      color: #272727;
-      font-family: Comfortaa;
-      font-size: 14px;
-      font-weight: 600;
+      @include button-styles;
 
       @media (max-width: 480px) {
         font-size: 10px;

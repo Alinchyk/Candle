@@ -1,0 +1,31 @@
+@mixin button-styles {
+  background: #ffbd59;
+  padding: 18px 54px;
+  justify-content: center;
+  align-items: center;
+
+  color: #272727;
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@mixin before-styles {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: url(/src/images/section-decor.png);
+  width: 22px;
+  height: 30px;
+}
+
+@mixin after-styles {
+  content: "";
+  position: absolute;
+  left: 22px;
+  bottom: 13px;
+  background-color: #7b6152;
+  width: 1000%;
+  height: 1px;
+}

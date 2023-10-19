@@ -2,6 +2,7 @@
   background-color: #a5978e;
   padding: 50px 0 108px;
   color: #fafafa;
+  margin-bottom: 150px;
 
   @media (max-width: 768px) {
     padding: 50px 0 90px;
@@ -70,23 +71,13 @@
       margin-left: 110px;
 
       &::before {
-        content: "";
-        position: absolute;
-        left: 0;
+        @include before-styles;
         bottom: -48px;
-        background-image: url(/src/images/about/about-decor.png);
-        width: 22px;
-        height: 30px;
       }
 
       &::after {
-        content: "";
-        position: absolute;
-        left: 22px;
+        @include after-styles;
         bottom: -38px;
-        background-color: #7b6152;
-        width: 1000%;
-        height: 1px;
       }
 
       @media (max-width: 1000px) {
