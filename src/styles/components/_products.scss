@@ -1,15 +1,54 @@
 .products {
   padding-bottom: 150px;
 
+  @media (max-width: 480px) {
+    padding-bottom: 50px;
+  }
+
   .section__inner {
     display: grid;
     grid-template-columns: 370px auto;
 
+    @media (max-width: 1000px) {
+      grid-template-columns: 290px auto;
+      gap: 0 10px;
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 200px auto;
+      gap: 0 30px;
+    }
+
+    @media (max-width: 600px) {
+      display: block;
+    }
+
     .products__descr {
+      @media (max-width: 600px) {
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      @media (max-width: 480px) {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @media (max-width: 360px) {
+        width: 235px;
+        margin-bottom: 25px;
+      }
+
       .products__title {
         font-family: Yeseva One;
         font-size: 40px;
         margin-bottom: 15px;
+
+        @media (max-width: 768px) {
+          font-size: 15px;
+          margin-bottom: 20px;
+        }
       }
 
       .products__text {
@@ -38,35 +77,104 @@
         @include after-styles;
       }
 
+      @media (max-width: 1000px) {
+        gap: 67px;
+      }
+
+      @media (max-width: 768px) {
+        padding-bottom: 62px;
+        gap: 30px 16px;
+      }
+
+      @media (max-width: 360px) {
+        gap: 41px 7px;
+      }
+
       .products__item {
         width: 290px;
         text-align: center;
         margin: 0 auto;
 
+        @media (max-width: 768px) {
+          width: 200px;
+        }
+
+        @media (max-width: 360px) {
+          width: 150px;
+        }
+
         .products__img {
           margin-bottom: 8px;
+
+          @media (max-width: 768px) {
+            width: 200px;
+          }
+
+          @media (max-width: 360px) {
+            width: 150px;
+          }
         }
 
         .price {
           font-family: Yeseva One;
           font-size: 16px;
           margin-bottom: 12px;
+
+          @media (max-width: 768px) {
+            font-size: 12px;
+            margin-bottom: 7px;
+          }
+
+          @media (max-width: 360px) {
+            font-size: 10px;
+            margin-bottom: 5px;
+          }
         }
 
         .product__title {
           font-family: Yeseva One;
           font-size: 16px;
           margin-bottom: 16px;
+
+          @media (max-width: 768px) {
+            font-size: 12px;
+            margin-bottom: 10px;
+          }
+
+          @media (max-width: 360px) {
+            font-size: 10px;
+            margin-bottom: 8px;
+          }
         }
 
         .product__text {
           font-size: 12px;
           margin-bottom: 27px;
+
+          @media (max-width: 768px) {
+            font-size: 8px;
+            margin-bottom: 18px;
+          }
+
+          @media (max-width: 360px) {
+            font-size: 6px;
+            margin-bottom: 16px;
+          }
         }
       }
 
       .btn {
         @include button-styles;
+
+        @media (max-width: 768px) {
+          font-size: 12px;
+          padding: 14px 41px;
+        }
+
+        @media (max-width: 360px) {
+          font-size: 8px;
+          padding: 8px 30px;
+        }
       }
     }
   }
