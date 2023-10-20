@@ -1,0 +1,130 @@
+.steps {
+  padding-bottom: 150px;
+
+  @media (max-width: 480px) {
+    padding-bottom: 50px;
+  }
+
+  .section__inner {
+    @include section__inner;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 200px auto;
+      gap: 0 13px;
+    }
+
+    .steps__descr {
+      @include section__descr;
+
+      .steps__title {
+        @include title;
+      }
+
+      .steps__text {
+        @include text;
+      }
+    }
+
+    .steps__content {
+      @include section__content-descr;
+      gap: 70px 25px;
+      counter-reset: number;
+
+      &::before {
+        @include before-styles;
+      }
+
+      &::after {
+        @include after-styles;
+      }
+
+      @media (max-width: 1000px) {
+        gap: 37px 35px;
+      }
+
+      @media (max-width: 768px) {
+        gap: 25px 35px;
+      }
+
+      @media (max-width: 480px) {
+        gap: 25px 40px;
+      }
+
+      @media (max-width: 360px) {
+        gap: 25px 20px;
+      }
+
+      .steps__item {
+        display: flex;
+        gap: 0 40px;
+        list-style-type: none;
+        position: relative;
+
+        &::before {
+          counter-increment: number;
+          content: counter(number);
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          color: #bea495;
+          font-family: Yeseva One;
+          font-size: 30px;
+
+          @media (max-width: 768px) {
+            font-size: 20px;
+          }
+
+          @media (max-width: 360px) {
+            font-size: 12px;
+          }
+        }
+
+        @media (max-width: 1000px) {
+          width: 300px;
+          gap: 32px;
+        }
+
+        @media (max-width: 768px) {
+          width: 200px;
+          gap: 0 20px;
+        }
+
+        @media (max-width: 360px) {
+          width: 155px;
+          gap: 0 16px;
+        }
+      }
+
+      .steps__item.steps__item--even {
+        &::before {
+          right: 0;
+          left: auto;
+        }
+      }
+      .item-text {
+        width: 174px;
+        margin-bottom: 40px;
+
+        @media (max-width: 768px) {
+          font-size: 8px;
+        }
+
+        @media (max-width: 360px) {
+          font-size: 6px;
+        }
+      }
+
+      .item-img {
+        @media (max-width: 768px) {
+          width: 88px;
+          object-fit: cover;
+        }
+
+        @media (max-width: 360px) {
+          width: 66px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
