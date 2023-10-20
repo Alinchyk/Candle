@@ -30,6 +30,14 @@
   height: 1px;
 }
 
+@mixin section__padding {
+  padding-bottom: 150px;
+
+  @media (max-width: 480px) {
+    padding-bottom: 50px;
+  }
+}
+
 @mixin section__inner {
   display: grid;
   grid-template-columns: 370px auto;
@@ -93,4 +101,12 @@
   grid-template-columns: auto auto;
   position: relative;
   padding-bottom: 92px;
+}
+
+@mixin courses__img__text {
+  position: absolute;
+  color: #fff;
+  font-family: Yeseva One;
+  font-size: 11px;
+  background: #bea495;
 }

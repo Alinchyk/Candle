@@ -1,0 +1,143 @@
+.courses {
+  @include section__padding;
+
+  .section__inner {
+    @include section__inner;
+    gap: 0 73px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 200px auto;
+      gap: 0 13px;
+    }
+
+    .courses__descr {
+      @include section__descr;
+
+      .courses__title {
+        @include title;
+      }
+
+      .courses__text {
+        @include text;
+      }
+    }
+
+    .courses__content {
+      @include section__content-descr;
+      gap: 0 126px;
+
+      &::before {
+        @include before-styles;
+      }
+
+      &::after {
+        @include after-styles;
+      }
+
+      @media (max-width: 1000px) {
+        gap: 0 77px;
+      }
+
+      @media (max-width: 768px) {
+        gap: 0 17px;
+      }
+
+      @media (max-width: 360px) {
+        display: block;
+      }
+
+      .courses__item {
+        text-align: center;
+        width: 270px;
+        margin: 0 auto;
+
+        @media (max-width: 768px) {
+          width: 195px;
+        }
+
+        @media (max-width: 360px) {
+          width: 255px;
+          margin-bottom: 41px;
+        }
+
+        .courses__item-img {
+          position: relative;
+        }
+
+        .courses__img {
+          margin-bottom: 28px;
+
+          @media (max-width: 768px) {
+            width: 195px;
+          }
+
+          @media (max-width: 360px) {
+            width: 255px;
+          }
+        }
+
+        .img__price {
+          @include courses__img__text;
+          padding: 19px 10px;
+          right: -10px;
+          bottom: 20px;
+
+          @media (max-width: 768px) {
+            padding: 10px 10px;
+          }
+        }
+
+        .img__title {
+          @include courses__img__text;
+          padding: 15px;
+          left: -10px;
+          top: 45%;
+
+          @media (max-width: 768px) {
+            padding: 10px;
+          }
+        }
+
+        .img__time {
+          @include courses__img__text;
+          padding: 7px 10px;
+          left: -10px;
+          top: 60%;
+        }
+
+        .item__title {
+          font-family: Yeseva One;
+          font-size: 16px;
+          margin-bottom: 15px;
+
+          @media (max-width: 768px) {
+            font-size: 12px;
+            margin-bottom: 5px;
+          }
+
+          @media (max-width: 360px) {
+            margin-bottom: 10px;
+          }
+        }
+
+        .item__text {
+          margin-bottom: 24px;
+
+          @media (max-width: 768px) {
+            font-size: 10px;
+            margin-bottom: 10px;
+          }
+
+          @media (max-width: 360px) {
+            margin-bottom: 25px;
+          }
+        }
+
+        .btn {
+          @include button-styles;
+          padding: 13px 16px;
+        }
+      }
+    }
+  }
+}

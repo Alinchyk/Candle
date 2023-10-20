@@ -1,15 +1,10 @@
 .steps {
-  padding-bottom: 150px;
-
-  @media (max-width: 480px) {
-    padding-bottom: 50px;
-  }
+  @include section__padding;
 
   .section__inner {
     @include section__inner;
 
     @media (max-width: 768px) {
-      grid-template-columns: 200px auto;
       gap: 0 13px;
     }
 
@@ -122,7 +117,6 @@
 
         @media (max-width: 360px) {
           width: 66px;
-          object-fit: cover;
         }
       }
     }

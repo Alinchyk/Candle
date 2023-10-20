@@ -1,9 +1,5 @@
 .products {
-  padding-bottom: 150px;
-
-  @media (max-width: 480px) {
-    padding-bottom: 50px;
-  }
+  @include section__padding;
 
   .section__inner {
     @include section__inner;
