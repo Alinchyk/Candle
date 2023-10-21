@@ -1,0 +1,139 @@
+.team {
+  padding-top: 61px;
+  padding-bottom: 83px;
+  background-color: #a5978e;
+  margin-bottom: 150px;
+
+  @media (max-width: 1000px) {
+    padding: 50px 0;
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: 50px;
+  }
+
+  .section__inner {
+    display: grid;
+    grid-template-columns: 390px auto;
+    gap: 0 39px;
+
+    @media (max-width: 1000px) {
+      grid-template-columns: 290px auto;
+      gap: 0 10px;
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 193px auto;
+      gap: 0 8px;
+    }
+
+    @media (max-width: 480px) {
+      display: block;
+    }
+
+    .team__descr {
+      @include section__descr;
+      color: #fafafa;
+
+      .team__title {
+        @include title;
+      }
+
+      .team__text {
+        @include text;
+      }
+    }
+
+    .team__content {
+      @include section__content-descr;
+      gap: 78px 75px;
+      padding-bottom: 0;
+
+      @media (max-width: 1000px) {
+        gap: 30px 20px;
+      }
+
+      @media (max-width: 480px) {
+        gap: 30px 30px;
+      }
+
+      @media (max-width: 360px) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .team__item {
+        position: relative;
+
+        @media (max-width: 360px) {
+          margin-bottom: 20px;
+        }
+      }
+
+      .team__img {
+        @media (max-width: 768px) {
+          width: 142px;
+        }
+
+        @media (max-width: 360px) {
+          width: 205px;
+        }
+      }
+
+      .team__item-text {
+        background-color: #7b6152;
+        padding: 15px 10px;
+        position: absolute;
+        color: #fff;
+        width: 165px;
+        bottom: 16px;
+        right: 0px;
+
+        @media (max-width: 768px) {
+          width: 106px;
+          padding: 9px 5px;
+          right: -10px;
+        }
+
+        @media (max-width: 480px) {
+          right: 10px;
+        }
+
+        @media (max-width: 360px) {
+          width: 152px;
+          padding: 14px 8px;
+          right: 35px;
+        }
+
+        .team__item-name {
+          text-align: center;
+          font-family: Yeseva One;
+          font-size: 12px;
+          padding-bottom: 5px;
+
+          @media (max-width: 768px) {
+            font-size: 8px;
+          }
+
+          @media (max-width: 360px) {
+            font-size: 12px;
+          }
+        }
+
+        .team__item-descr {
+          text-align: center;
+          font-size: 10px;
+
+          @media (max-width: 768px) {
+            font-size: 6px;
+          }
+
+          @media (max-width: 360px) {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
