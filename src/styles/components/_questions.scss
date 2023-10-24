@@ -1,0 +1,22 @@
+.questions {
+  @include section__padding;
+
+  .questions__inner {
+    @include section__inner;
+
+    .questions__descr {
+      @include section__descr;
+
+      .questions__title {
+        @include title;
+      }
+
+      .questions__text {
+        @include text;
+      }
+    }
+
+    // .questions__content {
+    // }
+  }
+}

@@ -1,0 +1,42 @@
+.certificates {
+  @include section__padding;
+
+  .certificates__inner {
+    @include section__inner;
+
+    .certificates__descr {
+      @include section__descr;
+
+      .certificates__title {
+        @include title;
+      }
+
+      .certificates__text {
+        @include text;
+      }
+    }
+
+    .certificates__content {
+      position: relative;
+      padding-bottom: 92px;
+
+      &::before {
+        @include before-styles;
+      }
+
+      &::after {
+        @include after-styles;
+      }
+
+      .certificates__slider {
+        width: 1135px;
+        overflow: hidden;
+      }
+
+      .swiper-pagination {
+        @include pagination;
+        text-align: left;
+      }
+    }
+  }
+}

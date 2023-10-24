@@ -3,6 +3,7 @@
   padding: 15px 50px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   color: #272727;
   font-family: Comfortaa;
@@ -109,4 +110,20 @@
   font-family: Yeseva One;
   font-size: 11px;
   background: #bea495;
+}
+
+@mixin pagination {
+  bottom: 50px;
+
+  .swiper-pagination-bullet {
+    background: #bea495;
+    width: 53px;
+    height: 4px;
+    border-radius: 0;
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #7b6152;
+  }
 }

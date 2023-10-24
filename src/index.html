@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Yeseva+One&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <title>Candle</title>
   </head>
   <body>
@@ -305,89 +309,348 @@
             </p>
           </div>
 
-           <div class="courses__content section__content-descr">
+          <div class="courses__content section__content-descr">
             <div class="courses__item">
               <div class="courses__item-img">
-                 <img
-                src="./images/courses/cours-1.jpg"
-                alt="cours-1"
-                class="courses__img"
-              />
-              <p class="img__title">Candle Making Basics</p>
-              <p class="img__time">Training - 20 hours</p>
-              <p class="img__price">Price - 40$</p>
+                <img
+                  src="./images/courses/cours-1.jpg"
+                  alt="cours-1"
+                  class="courses__img"
+                />
+                <p class="img__title">Candle Making Basics</p>
+                <p class="img__time">Training - 20 hours</p>
+                <p class="img__price">Price - 40$</p>
               </div>
-             
+
               <h4 class="item__title">Candle Making Basics</h4>
               <p class="item__text">
-                We will teach the fundamentals of candle making using various materials.
+                We will teach the fundamentals of candle making using various
+                materials.
               </p>
-              <button type="submit" class="btn">Buy the course</button>
+              <button type="button" class="btn">Buy the course</button>
             </div>
             <div class="courses__item">
-               <div class="courses__item-img">
+              <div class="courses__item-img">
                 <img
-                src="./images/courses/cours-2.jpg"
-                alt="cours-2"
-                class="courses__img"
-              />
-                 <p class="img__title">The Art of Aromatherapy</p>
-              <p class="img__time">Training - 20 hours</p>
-              <p class="img__price">Price - 40$</p>
-               </div>
+                  src="./images/courses/cours-2.jpg"
+                  alt="cours-2"
+                  class="courses__img"
+                />
+                <p class="img__title">The Art of Aromatherapy</p>
+                <p class="img__time">Training - 20 hours</p>
+                <p class="img__price">Price - 40$</p>
+              </div>
+
               <h4 class="item__title">The Art of Aromatherapy</h4>
               <p class="item__text">
-              We will study the art of aromatherapy and the crafting of candles with various scents.
+                We will study the art of aromatherapy and the crafting of
+                candles with various scents.
               </p>
-              <button type="submit" class="btn">Buy the course</button>
+              <button type="button" class="btn">Buy the course</button>
             </div>
+          </div>
         </div>
       </section>
 
       <!-- Team -->
       <section class="team">
         <div class="container section__inner">
-           <div class="team__descr section__descr">
+          <div class="team__descr section__descr">
             <h2 class="team__title">Our teachers</h2>
             <p class="team__text">
-              These people work together to create courses for you that will help you start your own business or hobby.
+              These people work together to create courses for you that will
+              help you start your own business or hobby.
             </p>
           </div>
 
-             <div class="team__content section__content-descr">
-              <div class="team__item">
-                <img src="./images/team/team-1.jpg" alt="Teacher Bohdan" class="team__img">
-                  <div class="team__item-text">
-                    <p class="team__item-name">Teacher Bohdan</p>
-                    <p class="team__item-descr">Has 4 years of teaching and work experience.</p>
-                  </div>
-                </img>
+          <div class="team__content section__content-descr">
+            <div class="team__item">
+              <img
+                src="./images/team/team-1.jpg"
+                alt="Teacher Bohdan"
+                class="team__img"
+              />
+              <div class="team__item-text">
+                <p class="team__item-name">Teacher Bohdan</p>
+                <p class="team__item-descr">
+                  Has 4 years of teaching and work experience.
+                </p>
               </div>
-              <div class="team__item">
-                <img src="./images/team/team-2.jpg" alt="Teacher Anna" class="team__img">
-                  <div class="team__item-text">
-                    <p class="team__item-name">Teacher Anna</p>
-                    <p class="team__item-descr">Has 6 years of teaching and work experience.</p>
-                  </div>
-                </img>
+            </div>
+            <div class="team__item">
+              <img
+                src="./images/team/team-2.jpg"
+                alt="Teacher Anna"
+                class="team__img"
+              />
+              <div class="team__item-text">
+                <p class="team__item-name">Teacher Anna</p>
+                <p class="team__item-descr">
+                  Has 6 years of teaching and work experience.
+                </p>
               </div>
-              <div class="team__item">
-                <img src="./images/team/team-3.jpg" alt="Teacher Halyna" class="team__img">
-                  <div class="team__item-text">
-                    <p class="team__item-name">Teacher Halyna</p>
-                    <p class="team__item-descr">Teaches design and decoration</p>
-                  </div>
-                </img>
+            </div>
+            <div class="team__item">
+              <img
+                src="./images/team/team-3.jpg"
+                alt="Teacher Halyna"
+                class="team__img"
+              />
+              <div class="team__item-text">
+                <p class="team__item-name">Teacher Halyna</p>
+                <p class="team__item-descr">Teaches design and decoration</p>
               </div>
-              <div class="team__item">
-                <img src="./images/team/team-4.jpg" alt="Marketer Olga" class="team__img">
-                  <div class="team__item-text">
-                    <p class="team__item-name">Marketer Olga</p>
-                    <p class="team__item-descr">Will help you with advertising</p>
-                  </div>
-                </img>
+            </div>
+            <div class="team__item">
+              <img
+                src="./images/team/team-4.jpg"
+                alt="Marketer Olga"
+                class="team__img"
+              />
+              <div class="team__item-text">
+                <p class="team__item-name">Marketer Olga</p>
+                <p class="team__item-descr">Will help you with advertising</p>
               </div>
-             </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feedback -->
+      <section class="feedback">
+        <div class="container feedback__inner">
+          <div class="feedback__descr section__descr">
+            <h2 class="feedback__title">Client Feedback</h2>
+            <p class="feedback__text">
+              Our customers come from different age groups, backgrounds,
+              occupations, and interests, but they share one common trait - they
+              aspire to harmony and find joy in life's small pleasures that
+              create an atmosphere of comfort and harmony in their homes.
+            </p>
+          </div>
+
+          <div class="feedback__content">
+            <div class="feedback__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="feedback__item">
+                    <div class="item-video">
+                      <img
+                        src="./images/feedback/feedback_img-1.jpg"
+                        alt="feedback_img"
+                        class="item-img"
+                      />
+                      <button class="item-btn">
+                        <img src="./images/feedback/play.svg" alt="play" />
+                      </button>
+                    </div>
+
+                    <div class="feedback__item-content">
+                      <a
+                        href="#"
+                        class="feedback__item-sociallink"
+                        target="_blank"
+                      >
+                        <img
+                          src="./images/footer/instagram.svg"
+                          alt="instagram"
+                        />
+                      </a>
+                      <p class="item-name">Ivan Pylypenko</p>
+                      <p class="item-text">
+                        I ordered a heart-shaped candle for Valentine's Day for
+                        my girlfriend, and it was simply incredible! The scent
+                        was very pleasant and romantic, and the heart shape was
+                        perfect for the occasion. My girlfriend was very pleased
+                        with the gift, and I will definitely order more candles
+                        from this website!
+                      </p>
+                      <button class="item-content-btn" type="submit">
+                        Buy this product
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="feedback__item">
+                    <div class="item-video">
+                      <img
+                        src="./images/feedback/feedback_img-1.jpg"
+                        alt="feedback_img"
+                        class="item-img"
+                      />
+                      <button class="item-btn">
+                        <img src="./images/feedback/play.svg" alt="play" />
+                      </button>
+                    </div>
+
+                    <div class="feedback__item-content">
+                      <a
+                        href="#"
+                        class="feedback__item-sociallink"
+                        target="_blank"
+                      >
+                        <img
+                          src="./images/footer/instagram.svg"
+                          alt="instagram"
+                        />
+                      </a>
+                      <p class="item-name">Ivan Pylypenko</p>
+                      <p class="item-text">
+                        I ordered a heart-shaped candle for Valentine's Day for
+                        my girlfriend, and it was simply incredible! The scent
+                        was very pleasant and romantic, and the heart shape was
+                        perfect for the occasion. My girlfriend was very pleased
+                        with the gift, and I will definitely order more candles
+                        from this website!
+                      </p>
+                      <button class="item-content-btn" type="submit">
+                        Buy this product
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="feedback__item">
+                    <div class="item-video">
+                      <img
+                        src="./images/feedback/feedback_img-1.jpg"
+                        alt="feedback_img"
+                        class="item-img"
+                      />
+                      <button class="item-btn">
+                        <img src="./images/feedback/play.svg" alt="play" />
+                      </button>
+                    </div>
+
+                    <div class="feedback__item-content">
+                      <a
+                        href="#"
+                        class="feedback__item-sociallink"
+                        target="_blank"
+                      >
+                        <img
+                          src="./images/footer/instagram.svg"
+                          alt="instagram"
+                        />
+                      </a>
+                      <p class="item-name">Ivan Pylypenko</p>
+                      <p class="item-text">
+                        I ordered a heart-shaped candle for Valentine's Day for
+                        my girlfriend, and it was simply incredible! The scent
+                        was very pleasant and romantic, and the heart shape was
+                        perfect for the occasion. My girlfriend was very pleased
+                        with the gift, and I will definitely order more candles
+                        from this website!
+                      </p>
+                      <button class="item-content-btn" type="submit">
+                        Buy this product
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="feedback__item">
+                    <div class="item-video">
+                      <img
+                        src="./images/feedback/feedback_img-1.jpg"
+                        alt="feedback_img"
+                        class="item-img"
+                      />
+                      <button class="item-btn">
+                        <img src="./images/feedback/play.svg" alt="play" />
+                      </button>
+                    </div>
+
+                    <div class="feedback__item-content">
+                      <a
+                        href="#"
+                        class="feedback__item-sociallink"
+                        target="_blank"
+                      >
+                        <img
+                          src="./images/footer/instagram.svg"
+                          alt="instagram"
+                        />
+                      </a>
+                      <p class="item-name">Ivan Pylypenko</p>
+                      <p class="item-text">
+                        I ordered a heart-shaped candle for Valentine's Day for
+                        my girlfriend, and it was simply incredible! The scent
+                        was very pleasant and romantic, and the heart shape was
+                        perfect for the occasion. My girlfriend was very pleased
+                        with the gift, and I will definitely order more candles
+                        from this website!
+                      </p>
+                      <button class="item-content-btn" type="submit">
+                        Buy this product
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="certificates">
+        <div class="container certificates__inner">
+          <div class="certificates__descr section__descr">
+            <h2 class="certificates__title">Quality Certificates</h2>
+            <p class="certificates__text">
+              Certificates provide additional trust and confidence for our
+              customers.
+            </p>
+          </div>
+
+          <div class="certificates__content section__content-descr">
+            <div class="certificates__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./images/feedback/сertificat-1.jpg"
+                    alt="сertificat-1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/feedback/сertificat-2.jpg"
+                    alt="сertificat-2"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/feedback/сertificat-1.jpg"
+                    alt="сertificat-1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/feedback/сertificat-2.jpg"
+                    alt="сertificat-2"
+                  />
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="questions">
+        <div class="container questions__inner">
+          <div class="questions__descr section__descr">
+            <h2 class="questions__title">FAQ</h2>
+          </div>
+
+          <div class="questions__content section__content-descr"></div>
         </div>
       </section>
     </main>
@@ -469,6 +732,7 @@
       </div>
     </footer>
 
-    <script src="./js/modal.js"></script>
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   </body>
 </html>
