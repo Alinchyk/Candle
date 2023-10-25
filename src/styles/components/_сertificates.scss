@@ -28,14 +28,45 @@
         @include after-styles;
       }
 
+      .swiper-slide img {
+        @media (max-width: 1000px) {
+          width: 280px;
+        }
+
+        @media (max-width: 768px) {
+          width: 200px;
+        }
+      }
+
       .certificates__slider {
         width: 1135px;
         overflow: hidden;
+
+        @media (max-width: 1000px) {
+          width: 880px;
+        }
+
+        @media (max-width: 768px) {
+          width: 638px;
+        }
+
+        @media (max-width: 480px) {
+          width: 415px;
+          margin: 0 auto;
+        }
+
+        @media (max-width: 360px) {
+          width: 200px;
+        }
       }
 
       .swiper-pagination {
         @include pagination;
         text-align: left;
+
+        @media (max-width: 1000px) {
+          text-align: center;
+        }
       }
     }
   }

@@ -4,6 +4,15 @@
   .feedback__inner {
     @include section__inner;
 
+    @media (max-width: 1000px) {
+      grid-template-columns: 260px auto;
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 200px auto;
+      gap: 0 16px;
+    }
+
     .feedback__descr {
       @include section__descr;
 
@@ -32,6 +41,19 @@
         width: 760px;
         overflow: hidden;
 
+        @media (max-width: 1000px) {
+          width: 690px;
+        }
+
+        @media (max-width: 768px) {
+          width: 420px;
+        }
+
+        @media (max-width: 360px) {
+          width: 250px;
+          margin: 0 auto;
+        }
+
         .feedback__item {
           display: grid;
           grid-template-columns: auto auto;
@@ -39,8 +61,29 @@
           padding-left: 20px;
           align-items: center;
 
+          @media (max-width: 360px) {
+            grid-template-columns: auto;
+            text-align: center;
+            padding: 0;
+          }
+
           .item-video {
             position: relative;
+
+            @media (max-width: 768px) {
+              width: 200px;
+            }
+
+            .item-img {
+              @media (max-width: 768px) {
+                width: 200px;
+              }
+
+              @media (max-width: 360px) {
+                width: 250px;
+                margin: 0 auto 20px;
+              }
+            }
           }
 
           .item-btn {
@@ -62,9 +105,19 @@
             margin-bottom: 15px;
             font-family: Yeseva One;
             font-size: 16px;
+
+            @media (max-width: 768px) {
+              font-size: 12px;
+              margin-bottom: 10px;
+            }
           }
           .item-text {
             margin-bottom: 63px;
+
+            @media (max-width: 768px) {
+              font-size: 10px;
+              margin-bottom: 38px;
+            }
           }
 
           .item-content-btn {
@@ -73,6 +126,18 @@
             position: absolute;
             bottom: 10px;
             right: 0;
+
+            @media (max-width: 768px) {
+              padding: 10px 20px;
+              font-size: 8px;
+              bottom: 0px;
+            }
+
+            @media (max-width: 360px) {
+              left: 0;
+              margin: 0 auto;
+              width: 84px;
+            }
           }
         }
 
