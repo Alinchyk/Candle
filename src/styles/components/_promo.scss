@@ -1,0 +1,52 @@
+.promo {
+  background-image: url(/src/images/promo/promo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 140px 0;
+
+  @media (max-width: 768px) {
+    padding: 67px 0;
+  }
+
+  @media (max-width: 480px) {
+    padding: 44px 0;
+  }
+
+  .promo__inner {
+    display: flex;
+    justify-content: space-between;
+
+    .promo__text {
+      color: #fff;
+      font-family: Yeseva One;
+      font-size: 40px;
+      padding-left: 56px;
+      margin-right: 110px;
+
+      @media (max-width: 768px) {
+        font-size: 15px;
+      }
+    }
+
+    .promo__link {
+      @include button-styles;
+      padding: 14px 25px 12px;
+      text-align: center;
+      margin-right: 70px;
+
+      @media (max-width: 768px) {
+        font-size: 12px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 8px;
+        margin-right: 50px;
+      }
+
+      @media (max-width: 360px) {
+        margin-right: 10px;
+      }
+    }
+  }
+}
