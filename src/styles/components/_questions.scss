@@ -16,7 +16,58 @@
       }
     }
 
-    // .questions__content {
-    // }
+    .questions__content {
+      .accordeon {
+        .accordeon__item {
+          background-color: #fff;
+          margin-bottom: 10px;
+
+          .accordeon__title {
+            color: #000;
+            font-family: Yeseva One;
+            font-size: 16px;
+            display: block;
+            cursor: pointer;
+            position: relative;
+            width: 100%;
+            text-align: left;
+            background-color: transparent;
+            padding: 16px 50px 16px 13px;
+
+            @media (max-width: 768px) {
+              font-size: 12px;
+            }
+
+            &::after {
+              content: "";
+              background-image: url(/src/images/Vector.svg);
+              width: 16px;
+              height: 16px;
+              position: absolute;
+              right: 26px;
+              top: 17px;
+            }
+          }
+
+          .accordeon__title.accordeon__title--active::after {
+            transform: rotate(180deg);
+          }
+
+          .accordeon__text {
+            opacity: 0;
+            max-height: 0;
+            transition: opacity 0.3s, max-height 0.3s;
+          }
+
+          .accordeon__text.accordeon__text--visible {
+            opacity: 1;
+          }
+
+          .accordeon__text ol {
+            padding: 20px 40px;
+          }
+        }
+      }
+    }
   }
 }

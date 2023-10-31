@@ -45,10 +45,8 @@
       top: 0;
       transform: translateY(-110%);
       transition: transform 0.5s;
-      padding-left: 45px;
-      padding-top: 25px;
-      padding-bottom: 45px;
-      padding-right: 35px;
+      padding: 25px 25px 45px 45px;
+      opacity: 0.9;
     }
   }
 
@@ -59,7 +57,16 @@
   }
 
   .list-link {
-    text-transform: uppercase;
+    @include list-link;
+
+    @media (max-width: 640px) {
+      &:hover,
+      :focus,
+      :active {
+        color: #fff;
+        animation: colorChange 0.5s infinite alternate;
+      }
+    }
   }
 
   .phone {

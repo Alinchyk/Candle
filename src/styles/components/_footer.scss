@@ -32,7 +32,7 @@
   }
 
   .list-link {
-    text-transform: uppercase;
+    @include list-link;
   }
 
   .footer__contacts {

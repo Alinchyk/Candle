@@ -9,6 +9,24 @@
   font-family: Comfortaa;
   font-size: 14px;
   font-weight: 600;
+
+  &:hover,
+  :focus {
+    background-color: #7b6152;
+    color: #fff;
+    animation: colorChange 0.5s infinite alternate;
+  }
+}
+
+@mixin list-link {
+  text-transform: uppercase;
+
+  &:hover,
+  :focus,
+  :active {
+    color: #7b6152;
+    animation: colorChange 0.5s infinite alternate;
+  }
 }
 
 @mixin before-styles {
