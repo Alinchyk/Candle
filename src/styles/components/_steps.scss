@@ -4,7 +4,7 @@
   .section__inner {
     @include section__inner;
 
-    @media (max-width: 768px) {
+    @include mediaSecondaryTablet {
       gap: 0 13px;
     }
 
@@ -33,19 +33,19 @@
         @include after-styles;
       }
 
-      @media (max-width: 1000px) {
+      @include mediaTablet {
         gap: 37px 35px;
       }
 
-      @media (max-width: 768px) {
+      @include mediaSecondaryTablet {
         gap: 25px 35px;
       }
 
-      @media (max-width: 480px) {
+      @include mediaPhone {
         gap: 25px 40px;
       }
 
-      @media (max-width: 360px) {
+      @include mediaSecondaryPhone {
         gap: 25px 20px;
       }
 
@@ -61,30 +61,30 @@
           position: absolute;
           bottom: 0;
           left: 0;
-          color: #bea495;
-          font-family: Yeseva One;
+          color: $number-color;
+          font-family: $font-title;
           font-size: 30px;
 
-          @media (max-width: 768px) {
+          @include mediaSecondaryTablet {
             font-size: 20px;
           }
 
-          @media (max-width: 360px) {
+          @include mediaSecondaryPhone {
             font-size: 12px;
           }
         }
 
-        @media (max-width: 1000px) {
+        @include mediaTablet {
           width: 300px;
           gap: 32px;
         }
 
-        @media (max-width: 768px) {
+        @include mediaSecondaryTablet {
           width: 200px;
           gap: 0 20px;
         }
 
-        @media (max-width: 360px) {
+        @include mediaSecondaryPhone {
           width: 155px;
           gap: 0 16px;
         }
@@ -100,22 +100,22 @@
         width: 174px;
         margin-bottom: 40px;
 
-        @media (max-width: 768px) {
+        @include mediaSecondaryTablet {
           font-size: 8px;
         }
 
-        @media (max-width: 360px) {
+        @include mediaSecondaryPhone {
           font-size: 6px;
         }
       }
 
       .item-img {
-        @media (max-width: 768px) {
+        @include mediaSecondaryTablet {
           width: 88px;
           object-fit: cover;
         }
 
-        @media (max-width: 360px) {
+        @include mediaSecondaryPhone {
           width: 66px;
         }
       }

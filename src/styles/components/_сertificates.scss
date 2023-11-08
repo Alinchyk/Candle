@@ -29,11 +29,11 @@
       }
 
       .swiper-slide img {
-        @media (max-width: 1000px) {
+        @include mediaTablet {
           width: 280px;
         }
 
-        @media (max-width: 768px) {
+        @include mediaSecondaryTablet {
           width: 200px;
         }
       }
@@ -42,20 +42,20 @@
         width: 1135px;
         overflow: hidden;
 
-        @media (max-width: 1000px) {
+        @include mediaTablet {
           width: 880px;
         }
 
-        @media (max-width: 768px) {
+        @include mediaSecondaryTablet {
           width: 638px;
         }
 
-        @media (max-width: 480px) {
+        @include mediaPhone {
           width: 415px;
           margin: 0 auto;
         }
 
-        @media (max-width: 360px) {
+        @include mediaSecondaryPhone {
           width: 200px;
         }
       }
@@ -64,7 +64,7 @@
         @include pagination;
         text-align: left;
 
-        @media (max-width: 1000px) {
+        @include mediaSection {
           text-align: center;
         }
       }

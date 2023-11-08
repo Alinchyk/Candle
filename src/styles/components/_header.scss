@@ -1,5 +1,5 @@
 .header {
-  background-color: #fff8f3;
+  background-color: $main-bg;
 
   .header__inner {
     display: flex;
@@ -9,7 +9,7 @@
   }
 
   .header__menu {
-    @media (max-width: 640px) {
+    @include mediaOptional {
       order: 1;
       z-index: 1;
     }
@@ -26,7 +26,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-    @media (max-width: 640px) {
+    @include mediaOptional {
       display: flex;
     }
   }
@@ -35,9 +35,9 @@
     display: flex;
     gap: 20px;
 
-    @media (max-width: 640px) {
-      background-color: #7b6152;
-      color: #fff8f3;
+    @include mediaOptional {
+      background-color: $list-bg;
+      color: $main-bg;
       flex-direction: column;
       gap: 20px;
       position: absolute;
@@ -51,7 +51,7 @@
   }
 
   .header__menu__list.menu--open {
-    @media (max-width: 640px) {
+    @include mediaOptional {
       transform: translateY(0);
     }
   }
@@ -59,11 +59,11 @@
   .list-link {
     @include list-link;
 
-    @media (max-width: 640px) {
+    @include mediaOptional {
       &:hover,
       :focus,
       :active {
-        color: #fff;
+        color: $white;
         animation: colorChange 0.5s infinite alternate;
       }
     }
@@ -81,7 +81,7 @@
       left: -23px;
       top: -3px;
 
-      @media (max-width: 768px) {
+      @include mediaSecondaryTablet {
         width: 14px;
         height: 14px;
         left: -15px;

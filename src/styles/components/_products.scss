@@ -28,16 +28,16 @@
         @include after-styles;
       }
 
-      @media (max-width: 1000px) {
+      @include mediaTablet {
         gap: 67px;
       }
 
-      @media (max-width: 768px) {
+      @include mediaSecondaryTablet {
         padding-bottom: 62px;
         gap: 30px 16px;
       }
 
-      @media (max-width: 360px) {
+      @include mediaSecondaryPhone {
         gap: 41px 7px;
       }
 
@@ -46,53 +46,53 @@
         text-align: center;
         margin: 0 auto;
 
-        @media (max-width: 768px) {
+        @include mediaSecondaryTablet {
           width: 200px;
         }
 
-        @media (max-width: 360px) {
+        @include mediaSecondaryPhone {
           width: 150px;
         }
 
         .products__img {
           margin-bottom: 8px;
 
-          @media (max-width: 768px) {
+          @include mediaSecondaryTablet {
             width: 200px;
           }
 
-          @media (max-width: 360px) {
+          @include mediaSecondaryPhone {
             width: 150px;
           }
         }
 
         .price {
-          font-family: Yeseva One;
+          font-family: $font-title;
           font-size: 16px;
           margin-bottom: 12px;
 
-          @media (max-width: 768px) {
+          @include mediaSecondaryTablet {
             font-size: 12px;
             margin-bottom: 7px;
           }
 
-          @media (max-width: 360px) {
+          @include mediaSecondaryPhone {
             font-size: 10px;
             margin-bottom: 5px;
           }
         }
 
         .product__title {
-          font-family: Yeseva One;
+          font-family: $font-title;
           font-size: 16px;
           margin-bottom: 16px;
 
-          @media (max-width: 768px) {
+          @include mediaSecondaryTablet {
             font-size: 12px;
             margin-bottom: 10px;
           }
 
-          @media (max-width: 360px) {
+          @include mediaSecondaryPhone {
             font-size: 10px;
             margin-bottom: 8px;
           }
@@ -102,12 +102,12 @@
           font-size: 12px;
           margin-bottom: 27px;
 
-          @media (max-width: 768px) {
+          @include mediaSecondaryTablet {
             font-size: 8px;
             margin-bottom: 18px;
           }
 
-          @media (max-width: 360px) {
+          @include mediaSecondaryPhone {
             font-size: 6px;
             margin-bottom: 16px;
           }
@@ -117,12 +117,12 @@
       .btn {
         @include button-styles;
 
-        @media (max-width: 768px) {
+        @include mediaSecondaryTablet {
           font-size: 12px;
           padding: 14px 41px;
         }
 
-        @media (max-width: 360px) {
+        @include mediaSecondaryPhone {
           font-size: 8px;
           padding: 8px 30px;
         }

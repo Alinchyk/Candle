@@ -2,7 +2,7 @@
   padding-top: 40px;
   padding-bottom: 50px;
 
-  @media (max-width: 500px) {
+  @include mediaOptionalFooter {
     padding: 50px 0;
     font-size: 14px;
   }
@@ -12,11 +12,11 @@
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width: 768px) {
+    @include mediaSecondaryTablet {
       flex-wrap: wrap;
     }
 
-    @media (max-width: 500px) {
+    @include mediaOptionalFooter {
       flex-direction: column;
     }
   }
@@ -25,7 +25,7 @@
     display: flex;
     gap: 20px;
 
-    @media (max-width: 500px) {
+    @include mediaOptionalFooter {
       flex-direction: column;
       margin: 50px 0;
     }
@@ -40,13 +40,13 @@
     flex-direction: column;
     width: 230px;
 
-    @media (max-width: 768px) {
+    @include mediaSecondaryTablet {
       width: 100%;
       text-align: center;
       padding-top: 15px;
     }
 
-    @media (max-width: 500px) {
+    @include mediaOptionalFooter {
       flex-direction: column;
     }
   }
@@ -59,8 +59,14 @@
     display: flex;
     gap: 15px;
 
-    @media (max-width: 768px) {
+    @include mediaSecondaryTablet {
       justify-content: center;
+    }
+
+    .social-item:hover,
+    :focus img {
+      transform: scale(1.1);
+      box-shadow: rgba(0, 0, 0, 0.5);
     }
   }
 }

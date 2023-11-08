@@ -1,7 +1,7 @@
 .contacts {
   padding: 150px 0 50px;
 
-  @media (max-width: 480px) {
+  @include mediaPhone {
     padding: 50px 0;
   }
 
@@ -11,11 +11,11 @@
     align-items: center;
 
     .form {
-      background-color: #ffffff;
+      background-color: $white;
       width: 664px;
       padding: 72px 42px 67px;
 
-      @media (max-width: 768px) {
+      @include mediaSecondaryTablet {
         width: 440px;
         gap: 0 20px;
         padding: 30px 22px;
@@ -25,67 +25,68 @@
         @include title;
         margin-bottom: 50px;
 
-        @media (max-width: 768px) {
+        @include mediaSecondaryTablet {
           margin-bottom: 20px;
         }
       }
 
       .form__input {
-        background-color: #ffffff;
+        background-color: $white;
         border: none;
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid $black;
         width: 100%;
         display: block;
         margin-bottom: 15px;
         padding: 7px 10px;
-        color: #000;
+        color: $black;
+        outline: none;
 
         &::placeholder {
-          color: #b3b3b3;
-          font-family: Comfortaa;
+          color: $placeholder-bg;
+          font-family: $font-main;
           font-size: 14px;
           font-weight: 400;
 
-          @media (max-width: 768px) {
+          @include mediaSecondaryTablet {
             font-size: 10px;
           }
         }
       }
 
       .form__btn {
-        background: #ffbd59;
-        color: #272727;
-        font-family: Comfortaa;
+        background: $btn-bg;
+        color: $btn-text;
+        font-family: $font-main;
         font-size: 14px;
         font-weight: 600;
         margin-top: 36px;
         padding: 17px 34px;
 
-        @media (max-width: 768px) {
+        @include mediaSecondaryTablet {
           margin-top: 30px;
           padding: 10px 25px;
         }
 
         &:hover,
         :focus {
-          background-color: #7b6152;
-          color: #fff;
+          background-color: $list-bg;
+          color: $white;
           animation: colorChange 0.5s infinite alternate;
         }
       }
     }
 
     .contacts__img {
-      @media (max-width: 1000px) {
+      @include mediaTablet {
         width: 335px;
       }
 
-      @media (max-width: 768px) {
+      @include mediaSecondaryTablet {
         width: 187px;
         object-fit: cover;
       }
 
-      @media (max-width: 480px) {
+      @include mediaPhone {
         display: none;
       }
     }

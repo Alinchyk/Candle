@@ -2,7 +2,7 @@
   padding-bottom: 150px;
   padding-top: 40px;
 
-  @media (max-width: 480px) {
+  @include mediaPhone {
     padding: 30px 0 50px;
   }
 
@@ -14,15 +14,15 @@
     width: 370px;
     padding: 150px 0 250px;
 
-    @media (max-width: 1000px) {
+    @include mediaTablet {
       padding: 95px 0 70px;
     }
 
-    @media (max-width: 768px) {
+    @include mediaSecondaryTablet {
       width: 236px;
     }
 
-    @media (max-width: 480px) {
+    @include mediaPhone {
       width: 180px;
     }
 
@@ -32,20 +32,20 @@
     }
 
     .top__title {
-      font-family: Yeseva One;
+      font-family: $font-title;
       font-size: 30px;
 
-      @media (max-width: 768px) {
+      @include mediaSecondaryTablet {
         font-size: 20px;
         margin-bottom: 20px;
       }
 
-      @media (max-width: 480px) {
+      @include mediaPhone {
         font-size: 15px;
         margin-bottom: 15px;
       }
 
-      @media (max-width: 360px) {
+      @include mediaSecondaryPhone {
         font-size: 18px;
       }
     }
@@ -54,17 +54,17 @@
       margin-top: 15px;
       margin-bottom: 48px;
 
-      @media (max-width: 768px) {
+      @include mediaSecondaryTablet {
         font-size: 10px;
         margin-bottom: 20px;
       }
 
-      @media (max-width: 480px) {
+      @include mediaPhone {
         font-size: 8px;
         margin-bottom: 15px;
       }
 
-      @media (max-width: 480px) {
+      @include mediaPhone {
         font-size: 10px;
       }
     }
@@ -72,7 +72,7 @@
     .top__btn {
       @include button-styles;
 
-      @media (max-width: 480px) {
+      @include mediaPhone {
         font-size: 10px;
         padding: 14px 41px;
       }
@@ -83,30 +83,30 @@
       top: 0;
       left: 240px;
 
-      @media (max-width: 1000px) {
+      @include mediaTablet {
         left: 340px;
       }
 
-      @media (max-width: 768px) {
+      @include mediaSecondaryTablet {
         left: 180px;
       }
-      @media (max-width: 360px) {
+      @include mediaSecondaryPhone {
         left: auto;
         right: 0;
       }
     }
 
     .top__img-l {
-      @media (max-width: 1000px) {
+      @include mediaTablet {
         width: 655px;
       }
 
-      @media (max-width: 480px) {
+      @include mediaPhone {
         width: 309px;
         left: 167px;
       }
 
-      @media (max-width: 360px) {
+      @include mediaSecondaryPhone {
         width: 160px;
       }
     }

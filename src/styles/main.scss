@@ -1,5 +1,6 @@
+@import "./utils/vars";
+@import "./utils/mixins";
 @import "./base/global";
-@import "./utils/mixins.scss";
 @import "./components/header";
 @import "./components/top";
 @import "./components/about";

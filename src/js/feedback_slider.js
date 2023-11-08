@@ -10,11 +10,13 @@ const swiperTwo = new Swiper(".certificates__slider", {
   loop: true,
   slidesPerView: 3,
   spaceBetween: 20,
-
   pagination: {
     el: ".swiper-pagination",
   },
-
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     768: { spaceBetween: 10 },
     480: { slidesPerView: 2 },

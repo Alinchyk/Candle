@@ -5,7 +5,7 @@
     @include section__inner;
     gap: 0 73px;
 
-    @media (max-width: 768px) {
+    @include mediaSecondaryTablet {
       grid-template-columns: 200px auto;
       gap: 0 13px;
     }
@@ -34,15 +34,15 @@
         @include after-styles;
       }
 
-      @media (max-width: 1000px) {
+      @include mediaTablet {
         gap: 0 77px;
       }
 
-      @media (max-width: 768px) {
+      @include mediaSecondaryTablet {
         gap: 0 17px;
       }
 
-      @media (max-width: 360px) {
+      @include mediaSecondaryPhone {
         display: block;
       }
 
@@ -51,11 +51,11 @@
         width: 270px;
         margin: 0 auto;
 
-        @media (max-width: 768px) {
+        @include mediaSecondaryTablet {
           width: 195px;
         }
 
-        @media (max-width: 360px) {
+        @include mediaSecondaryPhone {
           width: 255px;
           margin-bottom: 41px;
         }
@@ -67,11 +67,11 @@
         .courses__img {
           margin-bottom: 28px;
 
-          @media (max-width: 768px) {
+          @include mediaSecondaryTablet {
             width: 195px;
           }
 
-          @media (max-width: 360px) {
+          @include mediaSecondaryPhone {
             width: 255px;
           }
         }
@@ -82,7 +82,7 @@
           right: -10px;
           bottom: 20px;
 
-          @media (max-width: 768px) {
+          @include mediaSecondaryTablet {
             padding: 10px 10px;
           }
         }
@@ -93,7 +93,7 @@
           left: -10px;
           top: 45%;
 
-          @media (max-width: 768px) {
+          @include mediaSecondaryTablet {
             padding: 10px;
           }
         }
@@ -106,16 +106,16 @@
         }
 
         .item__title {
-          font-family: Yeseva One;
+          font-family: $font-title;
           font-size: 16px;
           margin-bottom: 15px;
 
-          @media (max-width: 768px) {
+          @include mediaSecondaryTablet {
             font-size: 12px;
             margin-bottom: 5px;
           }
 
-          @media (max-width: 360px) {
+          @include mediaSecondaryPhone {
             margin-bottom: 10px;
           }
         }
@@ -123,12 +123,12 @@
         .item__text {
           margin-bottom: 24px;
 
-          @media (max-width: 768px) {
+          @include mediaSecondaryTablet {
             font-size: 10px;
             margin-bottom: 10px;
           }
 
-          @media (max-width: 360px) {
+          @include mediaSecondaryPhone {
             margin-bottom: 25px;
           }
         }

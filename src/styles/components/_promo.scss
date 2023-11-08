@@ -5,11 +5,11 @@
   background-position: center;
   padding: 140px 0;
 
-  @media (max-width: 768px) {
+  @include mediaSecondaryTablet {
     padding: 67px 0;
   }
 
-  @media (max-width: 480px) {
+  @include mediaPhone {
     padding: 44px 0;
   }
 
@@ -18,13 +18,13 @@
     justify-content: space-between;
 
     .promo__text {
-      color: #fff;
-      font-family: Yeseva One;
+      color: $white;
+      font-family: $font-title;
       font-size: 40px;
       padding-left: 56px;
       margin-right: 110px;
 
-      @media (max-width: 768px) {
+      @include mediaSecondaryTablet {
         font-size: 15px;
       }
     }
@@ -35,16 +35,16 @@
       text-align: center;
       margin-right: 70px;
 
-      @media (max-width: 768px) {
+      @include mediaSecondaryTablet {
         font-size: 12px;
       }
 
-      @media (max-width: 480px) {
+      @include mediaPhone {
         font-size: 8px;
         margin-right: 50px;
       }
 
-      @media (max-width: 360px) {
+      @include mediaSecondaryPhone {
         margin-right: 10px;
       }
     }

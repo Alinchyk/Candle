@@ -1,19 +1,19 @@
 .about {
-  background-color: #a5978e;
+  background-color: $secondary-bg;
   padding: 50px 0 108px;
-  color: #fafafa;
+  color: $text-color;
   margin-bottom: 150px;
 
-  @media (max-width: 768px) {
+  @include mediaSecondaryTablet {
     padding: 50px 0 90px;
   }
 
-  @media (max-width: 480px) {
+  @include mediaPhone {
     padding: 50px 0 53px;
     margin-bottom: 50px;
   }
 
-  @media (max-width: 360px) {
+  @include mediaSecondaryPhone {
     padding: 25px 0 20px;
   }
 
@@ -24,28 +24,28 @@
     .about__content {
       min-width: 370px;
 
-      @media (max-width: 1000px) {
+      @include mediaTablet {
         min-width: 300px;
       }
 
-      @media (max-width: 768px) {
+      @include mediaSecondaryTablet {
         min-width: 200px;
       }
 
-      @media (max-width: 480px) {
+      @include mediaPhone {
         min-width: 172px;
       }
 
-      @media (max-width: 360px) {
+      @include mediaSecondaryPhone {
         min-width: 234px;
       }
 
       .about__title {
-        font-family: Yeseva One;
+        font-family: $font-title;
         font-size: 40px;
         margin-bottom: 15px;
 
-        @media (max-width: 768px) {
+        @include mediaSecondaryTablet {
           font-size: 15px;
           margin-bottom: 20px;
         }
@@ -53,11 +53,11 @@
 
       .about__text {
         margin-bottom: 15px;
-        @media (max-width: 768px) {
+        @include mediaSecondaryTablet {
           font-size: 10px;
         }
 
-        @media (max-width: 360px) {
+        @include mediaSecondaryPhone {
           font-size: 8px;
         }
       }
@@ -81,16 +81,16 @@
         bottom: -38px;
       }
 
-      @media (max-width: 1000px) {
+      @include mediaTablet {
         margin-left: 20px;
       }
 
-      @media (max-width: 768px) {
+      @include mediaSecondaryTablet {
         margin-left: 27px;
         gap: 0 10px;
       }
 
-      @media (max-width: 480px) {
+      @include mediaPhone {
         margin-left: 17px;
         gap: 0 5px;
         align-items: flex-end;
@@ -104,7 +104,7 @@
         }
       }
 
-      @media (max-width: 360px) {
+      @include mediaSecondaryPhone {
         margin-left: 25px;
         gap: 0 10px;
         align-items: center;
@@ -123,31 +123,31 @@
       }
 
       .about__img-1 {
-        @media (max-width: 768px) {
+        @include mediaSecondaryTablet {
           width: 120px;
         }
 
-        @media (max-width: 480px) {
+        @include mediaPhone {
           width: 80px;
         }
       }
 
       .about__img-2 {
-        @media (max-width: 768px) {
+        @include mediaSecondaryTablet {
           width: 190px;
         }
 
-        @media (max-width: 480px) {
+        @include mediaPhone {
           width: 140px;
         }
       }
 
       .about__img-3 {
-        @media (max-width: 768px) {
+        @include mediaSecondaryTablet {
           width: 120px;
         }
 
-        @media (max-width: 480px) {
+        @include mediaPhone {
           width: 80px;
         }
       }
@@ -155,11 +155,11 @@
       .about__item-text {
         font-size: 11px;
 
-        @media (max-width: 768px) {
+        @include mediaSecondaryTablet {
           font-size: 6px;
         }
 
-        @media (max-width: 480px) {
+        @include mediaPhone {
           display: none;
         }
       }
