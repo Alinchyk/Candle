@@ -8,7 +8,7 @@ const swiperOne = new Swiper(".feedback__slider", {
 
 const swiperTwo = new Swiper(".certificates__slider", {
   loop: true,
-  slidesPerView: 3,
+  slidesPerView: "auto",
   spaceBetween: 20,
   pagination: {
     el: ".swiper-pagination",
@@ -18,8 +18,8 @@ const swiperTwo = new Swiper(".certificates__slider", {
     disableOnInteraction: false,
   },
   breakpoints: {
-    768: { spaceBetween: 10 },
-    480: { slidesPerView: 2 },
+    768: { spaceBetween: 10, slidesPerView: 3 },
+    480: { spaceBetween: 10, slidesPerView: 2 },
     360: { slidesPerView: 1 },
   },
 });

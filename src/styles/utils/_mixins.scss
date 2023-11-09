@@ -181,6 +181,10 @@
     height: 4px;
     border-radius: 0;
     opacity: 1;
+
+    @include mediaSecondaryPhone {
+      width: 40px;
+    }
   }
 
   .swiper-pagination-bullet-active {

@@ -48,15 +48,17 @@
 
         @include mediaSecondaryTablet {
           width: 638px;
+          align-items: center;
         }
 
         @include mediaPhone {
           width: 415px;
-          margin: 0 auto;
+          margin-left: 5%;
         }
 
         @include mediaSecondaryPhone {
           width: 200px;
+          margin-left: 20%;
         }
       }
 

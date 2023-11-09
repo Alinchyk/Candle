@@ -54,6 +54,9 @@
         gap: 0 40px;
         list-style-type: none;
         position: relative;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: transform 0.6s ease, opacity 0.6s ease;
 
         &::before {
           counter-increment: number;
@@ -96,6 +99,12 @@
           left: auto;
         }
       }
+
+      .steps__item.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
       .item-text {
         width: 174px;
         margin-bottom: 40px;
